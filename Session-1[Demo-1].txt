@@ -1,0 +1,136 @@
+-----------------------------------------------------------------------------------------------------------------
+*)Session-1[Demo-1]:
+====================
+Q)What is data?
+Ans:
+->Data is a rawfact.[rawfact means it is just a state : it can be character type, or string type or a number or boolean...etc].
+
+->Data has no meaning, it is meaningless.
+
+->EX:
+	- SMITH (Who is smith, can we find some meaning about smith?)
+	
+	- 7566 (What is this? is it a roll number, or a registration number or id...);
+
+	-So that means by just seeing some data we can not bring out any meaning out of it.
+
+
+Q)What is Information?
+Ans:
+->Processing of data and extracting out some meaning out of it is known as the Information.
+
+->Information is always meaningful.
+
+->EX:
+	Employee_Name		Emp_No.			Salary
+	-------------		-------			------
+	  FORD			 7566			20000
+	  WARD			 7683			25000
+	
+	-So now, by seeing the above table we can come up with some meaning about the names and the 	numbers.
+
+	-FORD is an employee with an emp number of 7566 and salary of 20000.
+
+	-Similarly WARD also an emp with an emp number of 7683 and a salary of 25000.
+
+
+Q)What is the difference between data and information?
+Ans:
+->Data is a rawfact it has no meaning, whereas information is processed form of data which is always meaningful.
+
+
+Q)What are Datastorages and what are the different types of Datastorages are there?
+Ans:
+->Datastorages are a location where we can store data in the form of informations.
+
+->there are 3 types of Datastorages -------->
+
+	1.Papers and Books
+
+	2.Flat-File storages
+
+	3.DBMS (s/w)
+
+Q)Drawback of the Papers and Books Datastorage approach?
+Ans:
+->Actually when computer were not discovered that means before 1960s we used to store data in this papers and books.
+
+	-Drawbacks: 
+		i.These are manual approach of writing data in paper and books.
+
+		ii.As it requires a lot of human interaction, that is why there is no security.
+
+		iii.there is no concept of data integrity and efficient data retrieval.
+	
+
+Q)(V.IMP)*Drawbacks of Flat-File System as Datastorages?
+Ans:
+->In the earlier days of computing the Flat-file system was introduced(after 1960s). In the Operating System we can create file and can store data in it. that is known as Flat-file systems.	
+*>Drawbacks:
+------------
+i.>Data Redundancy:
+-------------------
+->Redundancy refers to duplicate datas. In fike system we can have duplicate datas, in 2 seperate files, which may take a extra bit of memory space, which is memory wastage, that is why in file system there is no way to prevent redundant data.
+
+->Suppose we have 2 text files named as emp1.txt and emp2.txt and both have the following same information------->
+
+	
+	EMP_NAME		EMP_NO			GENDER
+	--------		------			-------
+	MILLER			6789			Male
+	SMITH			7566			Male
+
+->So there is a extra wastage of memory for adding this same information in 2 seperate text document.
+
+ii.>Data Inconsistency Problem:
+-------------------------------
+->Suppose we have 2 different files with redundant data as we have shown above - that is emp1.txt and emp2.txt.
+
+->Now, say we have in emp1.txt --->
+	EMP_NAME		EMP_NO			GENDER
+	--------		------			-------
+	MILLER			6789			Male
+	SMITH			7566			Male
+
+->Now in emp2.txt we have--->
+
+	EMP_NAME		EMP_NO			GENDER
+	--------		------			-------
+	MILLER			6789			Male
+	SMITH			7566			Female
+
+->Now, can we tell the actual Gender of SMITH? No? we can not tell, because we are now in Dielemma, 
+or double minded, so we can not tell is SMITH male or female.
+
+->So this is known as the Data Inconsistency problem.
+
+->So Data Inconsistency problem always occurs whenever we are having redundant data.
+
+
+iii.>Data Retrieval:
+--------------------
+->Retrieval means, reading data/information from a source file.
+
+->So, in FileSystem if we want to retrieve data then we need to write some application programs using either Java, or C,C++, .net.... by using their File-Handling. That is a Rigorous job to do, just to retrieve data we need to write that much of program. That is why File-System does not support Efficient Retrieval of data.
+
+iv.>Data Security:
+------------------
+->In File-Systems are less secure to store Confidential data.
+
+->Confidnetial Data? => The datas which are personal or private to each of the individuals and they are not meant to be shared, that is known as Confidential Data.
+
+->Files do not come with security option to store these confidential datas.
+
+v.>Data Integrity:
+------------------
+->Integrity refers to validations, that means it first checks if the data given by the user is valid or not if not then reject the data, that is known as Data Integrity.
+
+->For example in my file I want to store some mobile number and mobile number should be of 10digits, but if we store 6 digit number then also it is accepting and also if we store 12 digit number then also accepting, becaus Files dont have any Data integrity concept.
+
+vi.>No Support of Data Indexing:
+--------------------------------
+->Accessing data from File system is very slow and time consuming as the file system, does not have any concept of Data Indexing.
+
+->Data Indexing is just like - say I have a book and it has some 500pages, and I want to jump to specific topic of that book which is present in some page no.263, so to directly go to that page we need to see that Book's Index. that is how we can jump to the topic.
+
+->File System is a book wihtout any Index.
