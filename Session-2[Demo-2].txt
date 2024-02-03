@@ -1,0 +1,119 @@
+-----------------------------------------------------------------------------------------------------------------
+*)Session-2[Demo-2]:
+====================
+Q)What is Database?
+Ans:
+->It is a memory which is used to store data in the form information.
+
+->It is also a collection of "Inter-Related" data/information.
+
+->"Inter-Related" means one information is dependent upon another informtaion.
+
+->Ex:-Suppose I have a Banking Databse, in side that I have several Modules, Like- Branches, Departments, Inside that Employees and also Customers Info, Now if there are no Branches then we can say there will be no existance of any Departments, similarly if there is no Departments there will not be any Employees, too, similarly the Vice-Versa is also true, this is known as Inter-Related data, as they are dependent upon each other. So BankDB is storing those inter-related Information as a Single Unit.
+
+->Ex:- IF I say there is No Products, will there be any Customer? No, similarly if there is No Customer there will not be any Demand for Products then Products will not be Manufactured.
+
+
+Q)What is the Third Datastorage - DMBS(s/w)?
+Ans:
+->DBMS stands for ===> Database Management System
+
+->It is a Database Software; which is used to MANAGE and MAINTAIN informations which are stored in Database.
+
+->By DBMS(s/w) we can perform the following operations over the data/information stored in the DB---->
+
+	-Create Database Memory (In Database Server)
+
+	-Create Tables in DB(In RDBMS)
+
+	-Inserting Data in Database Tables
+
+	-Updating Data
+
+	-Deleting Data
+
+	-Retrieving Data or Selecting Data
+
+Q)(Interview-Qstn*IMP)What is The Difference between Database and DBMS(s/w)?
+Ans:
+->1)Database is a memory element to store data in the form of information. Whereas, DBMS is a software, and it can be used to manage and maintain the data by storing it in Database and retrieving it.
+
+-2)Database is the collection of "Inter-Related" data/information as a Single-unit. Whereas, DBMS is the Collection of inter-related data but along with that it is a collection or set of PROGRAMS to perform certain operations on the dat, like accesing data,deleting data, inserting.....etc.
+
+
+Q)(**Interview-Qstn*IMP)What are the Different Models of DBMS(s/w)?
+Ans:
+->There are 3 different models for DBMS(s/w) those are --------->
+
+-1)Hierarchical Database Management System(HDBMS)::
+	
+	-This was introduced by IBM in 1960s and it was popular until 1969.
+
+	-This Management system suffers from, Data Retrieval, Data Redundancy, Inconsistency and 	Security issues.
+
+	-This is not now used.
+
+	-Ex: IMS(Information Management System) 
+
+-2)Network Database Management System(NDBMS):: 
+
+	-This was also in between 1960s to 1969 developed by IBM.
+
+	-Here Data are shared accross network, so some issues of Data retrieval and Inconsistency 	gone by as data can be easily hacked via network so there is lack of security in this 	model.
+
+	-It is also Outdated in mordern scenario.
+
+	-Ex: IDBMS s/w (Integrated Database Management System).
+
+-3)*****(V.IMP):Relational Database Management System Model(RDBMS)::
+---------------------------------------------------------------------
+->After 1969 from 1970 onwards This model Became so much popular, because of all the 	disadvantages of the other models are overcome in this model.
+
+->This model follows Relational Algebra. that is why it is known as RDBMS.
+
+->Now Here the data are stored in Structured manner.
+
+->This model has 2 seperate classification ---------->
+
+	-i)Object Relational Database Management System(ORDBMS)::
+
+		-Data can be stored always in the form of "Tables", tables are nothing but 			collection of Rows and Columns.
+
+		-*These are Completely Depending upon "Structured Query Language(SQL)".
+
+		-EX: Oracle DB(Oracle Corporation), MySQL(Oracle Corporation), 				  SQLServer(Microsoft), DB2(IBM), Sybase, Teradata, For Mobile we have SQLLite...etc.
+
+	-ii)Object Oriented Database Management System(OODBMS)::
+		
+		-Data are not stored in the form of Tables, rather Data are stored in the form of 		objects.
+
+		-(imp-Interview)These DBMS are not dependent upon Structured Query Language(SQL) 	for performing 	certain operations. That is why these Databases are also known as "NO SQL".
+
+		-Rather these DBMS s/w depends upon Object-Oriented Programming languages to 	perform certain operations and to manage data.
+
+		-EX: Mongo DB, Cassandra ..etc.
+
+Q)In Mongo DB how the Data are stored?
+Ans:
+->In Mongo DB the Data are stored in the Form of JavaScript Object Notation(JSON).
+
+Q)Where this MONGO DB is required?
+Ans: For "MERN" Stack developer this Mongo DB acts as a back-end database to store data.
+
+->MERN - MongoDB, Express JS, React Native
+
+
+Q)How the Database Can act as Backend?
+Ans:
+->WE can store some backend data (ex:product_information) in database, and we can use any serverside technologies like - Servlet, Express JS, Node JS and we can collect those backend data by SQL support and present them in our Fron-End application, that is why for a Fully Functional Web-Project Database is necessary.
+
+
+-*Note:
+--------
+->Who are interested to continue the course - Can call me in 6289395529, for further information.
+
+->Fees : 400Rs
+
+->Course Duration - At least 3months.
+
+->END
